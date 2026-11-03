@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Answering a DORA vendor questionnaire as a US SaaS company</title>
+<meta name="description" content="Got a DORA questionnaire from an EU bank or insurer? What Articles 28 to 30 ask of US SaaS vendors, the typical questions, and the evidence that closes each.">
+<link rel="canonical" href="https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Reprisa">
+<meta property="og:title" content="Answering a DORA vendor questionnaire as a US SaaS company">
+<meta property="og:description" content="Got a DORA questionnaire from an EU bank or insurer? What Articles 28 to 30 ask of US SaaS vendors, the typical questions, and the evidence that closes each.">
+<meta property="og:url" content="https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/">
+<meta property="article:published_time" content="2026-11-03">
+<meta property="article:modified_time" content="2026-11-03">
+<meta name="author" content="Amine">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F5F6F8;--ink:#13202E;--soft:#4F5D6C;--rule:#D2D8E0;--field:#B5BFCC;--accent:#1F4E79;--accent-dark:#183D60;--accent-tint:#E3ECF5;--ok:#2D6A4F;--ok-tint:#E2F0E8;--warn:#8A5A00;--warn-tint:#F7EDD5;--bad:#9B2C2C;--bad-tint:#F6E1E1;--focus:#2C5FD9;--code-bg:#13202E;--brandw:600;--serif:"Newsreader",Georgia,serif;--sans:"Inter Tight",system-ui,sans-serif}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-wrap:break-word}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+  a{color:var(--ink)}
+  img,svg{max-width:100%}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px 16px;padding:24px 20px;border-bottom:1px solid var(--rule)}
+  .brand{font-family:var(--serif);font-weight:var(--brandw);font-size:26px;text-decoration:none;letter-spacing:-.01em}
+  .brand small{font-family:var(--sans);font-weight:400;font-size:14px;color:var(--soft);margin-left:10px;letter-spacing:0}
+  header nav.mainnav{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:baseline}
+  header nav.mainnav a{margin:0;font-weight:500;text-decoration:none;border-bottom:2px solid transparent;padding-bottom:1px}
+  header nav.mainnav a:hover{border-bottom-color:var(--rule)}
+  header nav.mainnav a[aria-current="page"]{border-bottom-color:currentColor}
+  .hero{padding:64px 0 48px;max-width:820px}
+  h1{font-family:var(--serif);font-weight:var(--brandw);font-size:clamp(31px,4.8vw,50px);line-height:1.1;letter-spacing:-.015em;margin:0 0 20px}
+  .lede{font-size:19px;color:var(--soft);margin:0 0 28px;max-width:62ch}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 22px;border-radius:4px;border:2px solid var(--accent);font:inherit;font-weight:600;line-height:1.3;cursor:pointer;text-align:center}
+  .btn:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn.ghost:hover{background:var(--accent-tint)}
+  section{padding:56px 0;border-top:1px solid var(--rule)}
+  h2.s{font-family:var(--serif);font-weight:var(--brandw);font-size:30px;line-height:1.2;margin:0 0 10px}
+  .sub{color:var(--soft);max-width:64ch;margin:0 0 28px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+  .card{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:24px;min-width:0}
+  .card h3{font-family:var(--serif);font-size:21px;margin:0 0 10px;line-height:1.25}
+  .card p{margin:0 0 10px}.card p:last-child{margin-bottom:0}
+  .card ul{padding-left:18px;margin:0}.card li{margin-bottom:7px}
+  .card.paper{background:#fbfbfb}
+  .card.real{border:2px solid var(--accent);background:var(--accent-tint)}
+  .date{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:0 0 6px}
+  .quiz{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:8px 24px 20px}
+  .q{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--rule)}
+  .q:last-of-type{border-bottom:0}
+  .q p{margin:0}.q small{display:block;color:var(--soft);font-size:13px;margin-top:2px}
+  .seg{display:inline-flex;border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .seg button{font:inherit;font-size:14px;border:0;background:#fff;padding:7px 12px;cursor:pointer;color:var(--ink);border-left:1px solid var(--rule)}
+  .seg button:first-child{border-left:0}
+  .seg button[aria-pressed="true"].y{background:var(--ok);color:#fff}
+  .seg button[aria-pressed="true"].p{background:var(--warn);color:#fff}
+  .seg button[aria-pressed="true"].n{background:var(--bad);color:#fff}
+  .result{margin-top:22px;border-radius:6px;padding:22px 24px;border:1px solid var(--rule);background:#fff}
+  .result.bad{background:var(--bad-tint);border-color:var(--bad)}
+  .result.mid{background:var(--warn-tint);border-color:var(--warn)}
+  .result.good{background:var(--ok-tint);border-color:var(--ok)}
+  .result h3{font-family:var(--serif);font-size:24px;margin:0 0 8px;line-height:1.2}
+  .result .score{font-size:40px;font-weight:600;font-variant-numeric:tabular-nums}
+  .result ul{margin:10px 0 0;padding-left:18px}
+  .offers{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+  .offers.two{grid-template-columns:1fr 1fr;max-width:820px}
+  .offer{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:24px;min-width:0;display:flex;flex-direction:column}
+  .offer.main{border:2px solid var(--accent);background:var(--accent-tint)}
+  .offer h3{font-family:var(--serif);font-size:22px;margin:0 0 4px;line-height:1.25}
+  .offer .price{font-size:26px;font-weight:600;margin:6px 0 12px;font-variant-numeric:tabular-nums}
+  .offer .price span{font-size:15px;font-weight:400;color:var(--soft)}
+  .offer ul{padding-left:18px;margin:0 0 16px}.offer li{margin-bottom:6px}
+  .offer .btn{margin-top:auto;align-self:flex-start}
+  .after-offers{margin-top:24px}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;max-width:720px}
+  ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 52px}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;font-weight:600;color:var(--accent)}
+  ol.steps strong{display:block}
+  .guarantee{background:#fff;border-left:5px solid var(--accent);padding:22px 26px;max-width:760px;border-radius:0 6px 6px 0}
+  .guarantee p{margin:0 0 10px}.guarantee p:last-child{margin:0}
+  .checks{columns:2;column-gap:40px;padding-left:18px;max-width:820px;margin:0}
+  .checks li{break-inside:avoid;margin-bottom:8px}
+  form{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:26px;max-width:620px}
+  label{display:block;font-weight:500;margin-bottom:6px}
+  input,select,textarea{width:100%;max-width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--field);border-radius:4px;background:#fff;color:var(--ink);margin-bottom:16px}
+  .fine{font-size:14px;color:var(--soft)}
+  .thanks{display:none;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:26px;max-width:620px}
+  .contact-grid{display:grid;grid-template-columns:minmax(0,620px) minmax(0,1fr);gap:32px;align-items:start}
+  .side{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:22px 24px}
+  .side h3{font-family:var(--serif);font-size:20px;margin:0 0 8px}
+  .side p{margin:0 0 14px}
+  footer{border-top:1px solid var(--rule);padding:30px 0 48px;color:var(--soft);font-size:14px}
+  footer p{margin:0 0 10px}
+  .faq{max-width:780px}
+  .faq details{border-bottom:1px solid var(--rule);padding:14px 0}
+  .faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-weight:400;font-size:22px;line-height:1}
+  .faq details[open] summary::after{content:"\2212"}
+  .faq details p{margin:10px 0 0;color:var(--soft)}
+  .tbl{overflow-x:auto;margin:0 0 20px;border:1px solid var(--rule);border-radius:6px;background:#fff}
+  .tbl table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5}
+  .tbl caption{text-align:left;font-size:14px;color:var(--soft);padding:12px 14px 0}
+  .tbl th,.tbl td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--rule)}
+  .tbl thead th{background:var(--accent-tint);font-weight:600}
+  .tbl tr:last-child td{border-bottom:0}
+  /* guides */
+  .crumb{font-size:14px;color:var(--soft);padding-top:22px}
+  .crumb ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px}
+  .crumb li+li::before{content:"\203A";margin:0 6px;color:var(--soft)}
+  .crumb a{color:var(--soft)}
+  .hero.article{padding:40px 0 28px}
+  .hero.article h1{font-size:clamp(29px,4.2vw,44px);line-height:1.13}
+  .meta{font-size:14px;color:var(--soft);margin:0}
+  .answer{background:var(--accent-tint);border:2px solid var(--accent);border-radius:6px;padding:20px 24px;max-width:760px;margin:0 0 8px}
+  .answer p{margin:0}
+  .toc{max-width:740px;font-size:15px;margin:22px 0 0}
+  .toc strong{display:block;margin-bottom:4px}
+  .toc ol{margin:0;padding-left:20px}
+  .prose{max-width:740px;padding-bottom:24px;min-width:0}
+  .prose h2{font-family:var(--serif);font-weight:var(--brandw);font-size:clamp(24px,3.2vw,30px);line-height:1.2;margin:44px 0 12px;padding-top:28px;border-top:1px solid var(--rule)}
+  .prose h3{font-family:var(--serif);font-weight:var(--brandw);font-size:21px;line-height:1.3;margin:28px 0 8px}
+  .prose p,.prose ul,.prose ol{margin:0 0 16px}
+  .prose ul,.prose ol:not(.steps){padding-left:22px}
+  .prose li{margin-bottom:6px}
+  .prose code,.side code,.card code,.fine code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;background:#fff;border:1px solid var(--rule);border-radius:3px;padding:1px 5px;overflow-wrap:anywhere}
+  .prose pre{background:var(--code-bg);color:#E8EDF3;border-radius:6px;padding:16px 18px;overflow-x:auto;font-size:14px;line-height:1.55;margin:0 0 18px;max-width:100%}
+  .prose pre code{background:none;border:0;padding:0;color:inherit;font-size:inherit;overflow-wrap:normal}
+  ul.check{list-style:none;padding-left:0}
+  .prose ul.check{padding-left:0}
+  ul.check li{position:relative;padding-left:30px}
+  ul.check li::before{content:"";position:absolute;left:2px;top:.32em;width:16px;height:16px;border:2px solid var(--accent);border-radius:3px;background:#fff}
+  .cta{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--accent);border-radius:0 6px 6px 0;padding:22px 26px;margin:32px 0 8px}
+  .cta p{margin:0 0 14px}
+  .note{background:var(--warn-tint);border-left:5px solid var(--warn);padding:14px 18px;border-radius:0 6px 6px 0;font-size:15px}
+  .sources ol{padding-left:22px;font-size:15px}
+  .sources li{overflow-wrap:anywhere}
+  .related{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:0 0 16px}
+  .related a{display:block;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:16px 18px;text-decoration:none}
+  .related a strong{display:block;font-family:var(--serif);font-size:19px;line-height:1.25;margin-bottom:4px}
+  .related a span{color:var(--soft);font-size:15px}
+  .guides{display:grid;gap:20px;max-width:800px;margin-bottom:48px}
+  .guides .card h2{font-family:var(--serif);font-size:24px;line-height:1.25;margin:0 0 8px}
+  .guides .card h2 a{text-decoration:none}
+  .tag{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+  @media (max-width:860px){
+    .split,.three,.offers,.offers.two,.related,.contact-grid{grid-template-columns:1fr}
+    .q{grid-template-columns:1fr}
+    .hero{padding:44px 0 36px}
+    .checks{columns:1}
+  }
+  @media (max-width:560px){
+    body{font-size:16.5px}
+    .wrap{padding:0 16px}
+    header .wrap{padding:20px 16px}
+    .brand small{display:block;margin:2px 0 0}
+    h2.s{font-size:26px}
+    .quiz{padding:4px 16px 16px}
+    .card,.offer,form,.side,.answer,.cta,.guarantee{padding:18px}
+    .seg button{padding:7px 10px}
+    .tbl{overflow-x:visible}
+    .tbl thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+    .tbl tr{display:block;border-bottom:1px solid var(--rule);padding:6px 0}
+    .tbl tbody tr:last-child{border-bottom:0}
+    .tbl td{display:block;border:0;padding:4px 14px}
+    .tbl td::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;color:var(--soft);text-transform:uppercase;letter-spacing:.04em}
+    .tbl td:first-child{font-weight:600}
+  }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://reprisahq.com/#org", "name": "Reprisa", "url": "https://reprisahq.com/", "logo": "https://reprisahq.com/favicon.svg", "address": {"@type": "PostalAddress", "addressCountry": "FR"}, "founder": {"@type": "Person", "name": "Amine", "jobTitle": "Freelance DevOps engineer", "knowsAbout": ["AWS", "Google Cloud", "Microsoft Azure", "Kubernetes", "Terraform"]}, "description": "Evidence packs for EU cyber regulations (Cyber Resilience Act, DORA) for companies outside the EU that sell into it.", "areaServed": {"@type": "Place", "name": "Worldwide"}}, {"@type": "WebPage", "@id": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/", "url": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/", "name": "Answering a DORA vendor questionnaire as a US SaaS company", "description": "Got a DORA questionnaire from an EU bank or insurer? What Articles 28 to 30 ask of US SaaS vendors, the typical questions, and the evidence that closes each.", "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "@id": "https://reprisahq.com/#site", "url": "https://reprisahq.com/", "name": "Reprisa", "inLanguage": "en-US", "publisher": {"@id": "https://reprisahq.com/#org"}}}, {"@type": "Article", "@id": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/#article", "headline": "Answering a DORA vendor questionnaire as a US SaaS company", "description": "Got a DORA questionnaire from an EU bank or insurer? What Articles 28 to 30 ask of US SaaS vendors, the typical questions, and the evidence that closes each.", "inLanguage": "en-US", "datePublished": "2026-11-03", "dateModified": "2026-11-03", "author": {"@type": "Person", "name": "Amine", "jobTitle": "Freelance DevOps engineer"}, "publisher": {"@id": "https://reprisahq.com/#org"}, "mainEntityOfPage": {"@id": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/"}, "url": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/"}, {"@type": "Service", "@id": "https://reprisahq.com/dora/#service", "name": "DORA evidence pack for ICT and SaaS vendors of EU financial entities", "serviceType": "DORA third-party risk evidence", "provider": {"@id": "https://reprisahq.com/#org"}, "areaServed": {"@type": "Place", "name": "Worldwide"}, "url": "https://reprisahq.com/dora/", "offers": [{"@type": "Offer", "name": "DORA evidence pack", "priceCurrency": "USD", "url": "https://reprisahq.com/dora/#contact", "description": "Timed full restore test, full data export of one client, subcontractor register and dated evidence file.", "price": "3200", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "3200", "priceCurrency": "USD", "valueAddedTaxIncluded": false}}, {"@type": "Offer", "name": "DORA evidence pack with exit exercise and questionnaire answers", "priceCurrency": "USD", "url": "https://reprisahq.com/dora/#contact", "description": "Everything in the evidence pack, plus an exit exercise and written answers to your client's DORA questionnaire.", "price": "5400", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "5400", "priceCurrency": "USD", "valueAddedTaxIncluded": false}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://reprisahq.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://reprisahq.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "DORA questionnaire for US SaaS", "item": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/"}]}, {"@type": "FAQPage", "@id": "https://reprisahq.com/blog/dora-vendor-questionnaire-us-saas/#faq", "mainEntity": [{"@type": "Question", "name": "Does DORA apply directly to US SaaS companies?", "acceptedAnswer": {"@type": "Answer", "text": "No, unless the company is designated as a critical ICT third-party provider. DORA applies to EU financial entities, which must pass requirements to their ICT vendors through contracts (Article 30) and due diligence (Article 28)."}}, {"@type": "Question", "name": "Is a SOC 2 report enough to answer a DORA questionnaire?", "acceptedAnswer": {"@type": "Answer", "text": "It helps as supporting evidence, but it usually doesn't show the date and measured result of a full restore test or a real data export, which DORA-driven questionnaires tend to ask for."}}, {"@type": "Question", "name": "Who decides whether our service supports a critical or important function?", "acceptedAnswer": {"@type": "Answer", "text": "Your client, the financial entity. Ask for its classification early, because it decides whether the stricter clauses of Article 30(3) apply."}}, {"@type": "Question", "name": "What is the register of information?", "acceptedAnswer": {"@type": "Answer", "text": "A register each financial entity keeps on all its ICT service contracts (Article 28(3)), using the template in Implementing Regulation (EU) 2024/2956, and reports to its supervisor. Some of its fields need data from you, such as your identifier, services, countries and subcontractors."}}]}]}</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/">Reprisa<small>EU cyber evidence packs</small></a>
+  <nav class="mainnav" aria-label="Main"><a href="/cyber-resilience-act/">Cyber Resilience Act</a><a href="/dora/">DORA</a><a href="/blog/" aria-current="page">Guides</a><a href="/cyber-resilience-act/#contact">Contact</a></nav>
+</div></header>
+<main class="wrap">
+  <nav class="crumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Guides</a></li><li aria-current="page">DORA questionnaire for US SaaS</li></ol></nav>
+  <article>
+  <div class="hero article">
+    <span class="tag">DORA</span>
+    <h1>Answering a DORA vendor questionnaire as a US SaaS company</h1>
+    <p class="lede">For US and UK SaaS and ICT vendors whose EU bank, insurer or fintech clients send DORA due-diligence questionnaires. Why you get one, what the contract has to say, and the evidence that closes each question.</p>
+    <p class="meta">By Amine, freelance DevOps engineer · <time datetime="2026-11-03">Updated November 3, 2026</time></p>
+  </div>
+  <div class="answer"><p>DORA (Regulation (EU) 2022/2554) has applied since January 17, 2025 to EU financial entities, not to their vendors. But Articles 28 to 30 make your client assess you, record your contract in a register of information, plan its exit, and put minimum clauses in your contract. The questionnaire is how it checks. Statements rarely close it: dated evidence does, such as a timed restore test, a real export of one client's data and a subcontractor register.</p></div>
+  <nav class="toc" aria-label="In this guide"><strong>In this guide</strong><ol><li><a href="#why">Why a US company gets one</a></li><li><a href="#critical">Critical or important?</a></li><li><a href="#clauses">What Article 30 requires</a></li><li><a href="#questions">Questions and evidence</a></li><li><a href="#us">Points that trip up US vendors</a></li><li><a href="#ctpp">Critical ICT third-party providers</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+  <div class="prose">
+
+  <h2 id="why">Why a US company gets a DORA questionnaire</h2>
+  <p>The Digital Operational Resilience Act, Regulation (EU) 2022/2554, has applied since January 17, 2025. It is addressed to EU financial entities: banks, insurers, investment firms, payment and e-money institutions and others. It is not addressed to you. But Article 28 says a financial entity that uses ICT services stays fully responsible for its own compliance, and gives it a list of things to do about its vendors. That list becomes your questionnaire.</p>
+  <p>Among other things, your client has to:</p>
+  <ul>
+    <li>assess you before signing, including information security and concentration risk (Article 28(4) and Article 29);</li>
+    <li>keep a <strong>register of information</strong> on every contract for ICT services, flagging those that support critical or important functions, and report it to its supervisor (Article 28(3));</li>
+    <li>have documented exit strategies for services that support critical or important functions, tested and reviewed periodically (Article 28(8));</li>
+    <li>put the minimum clauses of Article 30 into your contract.</li>
+  </ul>
+  <p>The detail of the contract policy is in Commission Delegated Regulation (EU) 2024/1773, the subcontracting conditions for critical functions in Delegated Regulation (EU) 2025/532, and the register template in Implementing Regulation (EU) 2024/2956. You don't need to read them cover to cover, but your client's legal team has, and their questions come from there.</p>
+
+  <h2 id="critical">The question that changes everything: critical or important?</h2>
+  <p>Article 3 defines a critical or important function as one whose disruption would materially impair the financial entity's performance, the soundness or continuity of its services, or its regulatory compliance. If your service supports such a function, say a lending platform, a payments engine or a tool advisors use with clients, the stricter clauses of Article 30(3) apply on top of Article 30(2).</p>
+  <p>Your client makes that call, not you. Ask for it in writing at the start: it decides how much evidence you will be asked for.</p>
+
+  <h2 id="clauses">What Article 30 puts in your contract</h2>
+  <h3>Every ICT contract (Article 30(2))</h3>
+  <ul>
+    <li>a clear, complete description of the services, and whether subcontracting is allowed and on what terms;</li>
+    <li>the countries or regions where services are provided and data is processed and stored, with notice before any change;</li>
+    <li>provisions on the availability, authenticity, integrity and confidentiality of data;</li>
+    <li>access, recovery and return of data in an easily accessible format, including on insolvency, wind-down or termination;</li>
+    <li>service level descriptions;</li>
+    <li>assistance during ICT incidents, at no extra cost or at a cost set in advance;</li>
+    <li>full cooperation with the client's supervisors;</li>
+    <li>termination rights and minimum notice periods;</li>
+    <li>conditions for your participation in the client's security awareness and training programs.</li>
+  </ul>
+  <h3>On top, for critical or important functions (Article 30(3))</h3>
+  <ul>
+    <li>precise quantitative and qualitative performance targets;</li>
+    <li>notice periods and a duty to report anything that could affect your ability to deliver;</li>
+    <li>a duty to implement and test business contingency plans and keep appropriate security measures;</li>
+    <li>participation in the client's threat-led penetration testing where it applies;</li>
+    <li>unrestricted rights of access, inspection and audit for the client, a third party it appoints, and its supervisor;</li>
+    <li>exit strategies, including a mandatory, adequate transition period.</li>
+  </ul>
+
+  <h2 id="questions">The usual questions, and the evidence that closes each one</h2>
+  <p>Wording varies by institution, but most questionnaires follow Articles 28 and 30. What closes a question is rarely a statement. It is a dated document.</p>
+<div class="tbl"><table><caption>DORA vendor questionnaire: question, evidence, how to produce it</caption><thead><tr><th scope="col">Question</th><th scope="col">Evidence expected</th><th scope="col">How to produce it</th></tr></thead><tbody>
+<tr><td data-label="Question">Where is our data hosted and processed, including at subcontractors?</td><td data-label="Evidence expected">Countries and regions per service and per subcontractor</td><td data-label="How to produce it">Inventory of cloud accounts, regions and managed services actually in use, cross-checked with contracts</td></tr>
+<tr><td data-label="Question">Which subcontractors are involved in the service?</td><td data-label="Evidence expected">Dated register: name, role, country, data concerned</td><td data-label="How to produce it">Built from billing, infrastructure code and SaaS dependencies</td></tr>
+<tr><td data-label="Question">When did you last test your continuity plan, and with what result?</td><td data-label="Evidence expected">Dated test report with measured recovery time and data loss</td><td data-label="How to produce it">Full restore into an isolated environment, timed end to end</td></tr>
+<tr><td data-label="Question">What are your RTO and RPO?</td><td data-label="Evidence expected">Values measured in the last test, not only contractual targets</td><td data-label="How to produce it">Same measurements as the restore test, compared with the contract</td></tr>
+<tr><td data-label="Question">Can you return all our data at the end of the contract?</td><td data-label="Evidence expected">Export procedure, formats, timing, and a record of a real export</td><td data-label="How to produce it">Full export of one client's data set, checked for completeness</td></tr>
+<tr><td data-label="Question">Do you have an exit plan and a transition period?</td><td data-label="Evidence expected">Written exit plan, duration and content of assistance</td><td data-label="How to produce it">Written from the export exercise, with durations from the tests</td></tr>
+<tr><td data-label="Question">How and how fast will you tell us about an incident?</td><td data-label="Evidence expected">Incident procedure with timings, contacts and cost of assistance</td><td data-label="How to produce it">Aligned with the client's own reporting deadlines, and rehearsed</td></tr>
+<tr><td data-label="Question">Would you accept an audit or on-site inspection?</td><td data-label="Evidence expected">Audit clause and practical terms</td><td data-label="How to produce it">Written audit procedure, plus existing reports shared up front</td></tr>
+</tbody></table></div>
+
+
+  <h2 id="us">Points that trip up US vendors</h2>
+  <h3>Data location answers have to include the US</h3>
+  <p>If your support team, your logging provider or your analytics run in the US, say so, per service. A vague "data is hosted in the EU" answer falls apart as soon as your client looks at your subprocessor list. Answer by service and by subcontractor, with regions.</p>
+  <h3>Your SOC 2 report helps, but it is not a DORA answer</h3>
+  <p>A SOC 2 report or ISO/IEC 27001 certificate is useful supporting evidence, and you should attach it. It usually won't tell your client when you last restored everything from backup, how long it took, or whether you have ever exported a client's full data set. Those are the gaps a timed test fills.</p>
+  <h3>Incident timing is measured in hours</h3>
+  <p>Your client has its own incident reporting deadlines under DORA, and they are short. Ask the client how quickly it needs to hear from you, and write that number into your procedure instead of a generic "without undue delay".</p>
+  <h3>"Unrestricted" audit rights</h3>
+  <p>For critical or important functions, Article 30(3) requires unrestricted rights of access, inspection and audit. Pushing back on the right itself rarely works. Negotiate the practical terms instead: notice, scope, who attends, and which existing reports can be used first.</p>
+  <h3>Identifiers</h3>
+  <p>The register template identifies ICT providers by a code, such as an LEI (Legal Entity Identifier). If you don't have one, expect to be asked for it or for an alternative identifier.</p>
+
+  <h2 id="ctpp">Are you a "critical ICT third-party provider"?</h2>
+  <p>Almost certainly not. On November 18, 2025, the European Supervisory Authorities published their first list of 19 critical ICT third-party providers, who are overseen directly. The list is mostly large cloud, data center, network and financial-technology providers. Your hyperscaler may be on it; a typical B2B SaaS vendor is not. You will still get the questionnaire.</p>
+
+  <div class="cta">
+    <p><strong>Need the evidence, not just the answers?</strong> The DORA evidence pack runs a timed full restore, a full export of one client's data, and builds your subcontractor register and a dated evidence file. $3,200, or $5,400 with an exit exercise and written questionnaire answers.</p>
+    <div class="ctas"><a class="btn" href="/dora/#offer">See the DORA evidence pack</a><a class="btn ghost" href="/dora/#contact" data-booking>Book a 30-min call</a></div>
+  </div>
+  <p class="fine">Reprisa builds processes, tooling and evidence. It is not a law firm or an auditor, and this guide is not legal advice.</p>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary>Does DORA apply directly to US SaaS companies?</summary><p>No, unless the company is designated as a critical ICT third-party provider. DORA applies to EU financial entities, which must pass requirements to their ICT vendors through contracts (Article 30) and due diligence (Article 28).</p></details>
+    <details><summary>Is a SOC 2 report enough to answer a DORA questionnaire?</summary><p>It helps as supporting evidence, but it usually doesn't show the date and measured result of a full restore test or a real data export, which DORA-driven questionnaires tend to ask for.</p></details>
+    <details><summary>Who decides whether our service supports a critical or important function?</summary><p>Your client, the financial entity. Ask for its classification early, because it decides whether the stricter clauses of Article 30(3) apply.</p></details>
+    <details><summary>What is the register of information?</summary><p>A register each financial entity keeps on all its ICT service contracts (Article 28(3)), using the template in Implementing Regulation (EU) 2024/2956, and reports to its supervisor. Some of its fields need data from you, such as your identifier, services, countries and subcontractors.</p></details>
+  </div>
+
+  <h2 id="sources">Sources</h2>
+  <div class="sources">
+  <ol>
+    <li><a href="https://eur-lex.europa.eu/eli/reg/2022/2554/oj" rel="noopener">Regulation (EU) 2022/2554 (DORA), Articles 3, 28, 29 and 30</a> — EUR-Lex.</li>
+    <li><a href="https://eur-lex.europa.eu/eli/reg_del/2024/1773/oj" rel="noopener">Commission Delegated Regulation (EU) 2024/1773, policy on contractual arrangements</a> — EUR-Lex.</li>
+    <li><a href="https://eur-lex.europa.eu/eli/reg_impl/2024/2956/oj" rel="noopener">Commission Implementing Regulation (EU) 2024/2956, register of information templates</a> — EUR-Lex.</li>
+    <li><a href="https://eur-lex.europa.eu/eli/reg_del/2025/532/oj" rel="noopener">Commission Delegated Regulation (EU) 2025/532, subcontracting of critical or important functions</a> — EUR-Lex.</li>
+    <li><a href="https://www.esma.europa.eu/press-news/esma-news/european-supervisory-authorities-designate-critical-ict-third-party-providers" rel="noopener">ESMA: European Supervisory Authorities designate critical ICT third-party providers</a> — November 18, 2025.</li>
+    <li><a href="https://www.morganlewis.com/blogs/sourcingatmorganlewis/2025/11/dora-eu-regulators-announce-list-of-critical-ict-third-party-providers" rel="noopener">Morgan Lewis: DORA, EU regulators announce list of critical ICT third-party providers</a> — 19 providers designated.</li>
+  </ol>
+  <p class="fine">Checked November 3, 2026. Only the text published in the Official Journal of the European Union is authentic.</p>
+  </div>
+
+  <h2>Related</h2>
+  <div class="related">
+    <a href="The Reprisa DORA evidence pack"><strong>/dora/</strong><span>Restore test, data export, subcontractor register. $3,200.</span></a>
+    <a href="CRA 24-hour vulnerability reporting"><strong>/blog/cra-24-hour-vulnerability-reporting/</strong><span>If you also ship software or devices to the EU.</span></a>
+    <a href="Does the CRA apply to my company?"><strong>/blog/does-the-cra-apply-to-my-company/</strong><span>A scope checklist for non-EU manufacturers.</span></a>
+  </div>
+  </div>
+  </article>
+</main>
+<footer><div class="wrap">
+  <p>Reprisa: evidence packs for EU cyber regulations, for companies outside the EU that sell into it. <a href="/cyber-resilience-act/">Cyber Resilience Act</a> (Regulation (EU) 2024/2847) and <a href="/dora/">DORA</a> (Regulation (EU) 2022/2554). Run by Amine, a freelance DevOps engineer based in France (EU). Prices in USD, excluding taxes.</p>
+  <p>Reprisa does technical work and writes evidence. It is not a law firm, a notified body, an auditor or an EU authorised representative, and nothing on this site is legal advice.</p>
+  <p><a href="/blog/"><strong>Guides</strong></a>: <a href="/blog/cra-24-hour-vulnerability-reporting/">CRA 24-hour vulnerability reporting for non-EU manufacturers</a> · <a href="/blog/dora-vendor-questionnaire-us-saas/">Answering a DORA vendor questionnaire as a US SaaS company</a> · <a href="/blog/does-the-cra-apply-to-my-company/">Does the CRA apply to my company? A scope checklist</a></p>
+</div></footer>
+</body>
+</html>
